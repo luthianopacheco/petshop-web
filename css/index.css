@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    right: 15px;
+}
+
+/*----------------- BANNER -----------------*/
+.imagem {
+
+    max-width: 90%;
+    margin: auto;
+    padding-left: 45px;
+}
+
+@media (width >=1300px) {
+    .imagem {
+        max-width: 1150px;
+    }
+}
+
+/*----------------- PRODUTOS EM OFERTA -----------------*/
+
+.div-prod {
+    background-color: blueviolet;
+    box-shadow: 0px 0px 20px 5px gray;
+    padding-block: 80px;
+}
+
+.div-ofertas-title {
+    max-width: 80%;
+    color: #f1f1f1;
+    margin: auto;
+}
+
+@media (width >=1600px) {
+    .div-ofertas-title {
+        max-width: 1250px;
+    }
+}
+
+.row-prod {
+    display: flex;
+    max-width: 80%;
+    padding-left: 30px;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-prod {
+    min-width: 287px;
+    width: 287px;
+}
+
+.servicos-title{
+    color: #121212;
+}
