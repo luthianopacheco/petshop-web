@@ -11,9 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,38 @@
     <!-- --------- CORPO / CONTEÚDO --------- -->
     <section class="corpo">
         <div>
+            <div class="div-ofertas-title servicos-title">
+                <h2>Login</h2>
+                <hr class="divider">
+            </div>
         </div>
+        <div class="card-login">
+            <img src="../assets/index/logo-escrita.png" alt="logo" class="img-logo">
+            <form action="https://formsubmit.co/luthianopacheco@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="inputEmail" class="label col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input class="inpt form-control" type="email" name="E-mail" placeholder="email@example.com"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" class="label col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="Senha" class="inpt form-control" id="inputPassword" minlength="8"
+                            placeholder="Password" required>
+                    </div>
+                </div>
+                <a href="esqueci_minha_senha.html" class="esqueci">Esqueci minha senha</a>
+                <input type="submit" class="btn-submit" value="Entrar">
+
+            </form>
+
+            <p class="cadastro">Ainda não é cadastrado?<a href="cadastro.html">Clique aqui</a></p>
+        </div>
+
+
     </section>
 
     <!-- --------- RODAPÉ / FOOTER --------- -->
@@ -50,17 +81,23 @@
                     <!-- REGISTRO -->
                     <ul class="lista-footer">
                         <li>Navegação</li>
-                        <a href="">
-                            <li>Home</li>
+                        <a href="/">
+                            <li>Página Inicial</li>
                         </a>
-                        <a href="">
+                        <a href="login.html">
                             <li>Login</li>
                         </a>
-                        <a href="">
+                        <a href="cadastro.html">
                             <li>Cadastro</li>
                         </a>
-                        <a href="">
+                        <a href="esqueci_minha_senha.html">
                             <li>Esqueceu a Senha?</li>
+                        </a>
+                        <a href="produtos.html">
+                            <li>Produtos</li>
+                        </a>
+                        <a href="servicos.html">
+                            <li>Serviços</li>
                         </a>
                     </ul>
                 </div>
@@ -68,17 +105,20 @@
                 <div class="col-sm-2">
                     <ul class="lista-footer">
                         <li>Navegação</li>
-                        <a href="">
-                            <li>Produto</li>
-                        </a>
-                        <a href="">
-                            <li>Serviços</li>
-                        </a>
-                        <a href="">
+                        <a href="planos_de_saude.html">
                             <li>Planos de Saúde</li>
                         </a>
-                        <a href="">
+                        <a href="contato.html">
                             <li>Contato</li>
+                        </a>
+                        <a href="banho_tosa.html">
+                            <li>Banho e Tosa</li>
+                        </a>
+                        <a href="hospedagem.html">
+                            <li>Hospedagem</li>
+                        </a>
+                        <a href="petsitting.html">
+                            <li>Pet Sitting</li>
                         </a>
                     </ul>
                 </div>
@@ -86,13 +126,13 @@
                 <div class="col-sm-2">
                     <ul class="lista-footer">
                         <li>Quem somos</li>
-                        <a href="">
+                        <a href="#">
                             <li>Sobre a Coisas de Pet</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>Política de Privacidade</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>Termos de Uso</li>
                         </a>
                     </ul>
@@ -101,10 +141,10 @@
                 <div class="col-sm-2">
                     <ul class="lista-footer">
                         <li>Nos siga</li>
-                        <a href="">
+                        <a href="#">
                             <li>Instagram</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>Facebook</li>
                         </a>
                     </ul>

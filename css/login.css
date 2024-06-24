@@ -1,0 +1,144 @@
+/*----------------- TITULO -----------------*/
+.div-ofertas-title {
+    max-width: 80%;
+    color: #121212;
+    margin: auto;
+}
+
+@media (width >=1600px) {
+    .div-ofertas-title {
+        max-width: 1250px;
+    }
+}
+
+/*----------------- IMAGEM -----------------*/
+.img-logo {
+    display: flex;
+    width: 100px;
+    margin: auto;
+}
+
+/*----------------- CARD -----------------*/
+.card-login {
+    margin: auto;
+    width: 450px;
+    height: auto;
+    border: 1px #121212;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px grey;
+}
+
+.form-group .label {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-top: 10px;
+
+
+}
+
+.inpt {
+    width: 370px;
+}
+
+.esqueci {
+    display: flex;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 500;
+    justify-content: end;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.btn-submit {
+    display: flex;
+    width: 200px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #2ce28a;
+}
+
+.btn-submit:hover {
+    color: #f1f1f1;
+    background-color: blueviolet;
+}
+
+.cadastro {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+/*----------------- CARD CADASTRO -----------------*/
+.row {
+    display: flex;
+    justify-content: left;
+}
+
+.row .inpt {
+    width: 120px;
+}
+
+.row .inpt2,
+.row .label2 {
+    width: 223px;
+    margin-left: -180px;
+    z-index: 2;
+}
+
+.label2 {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.inptCidade {
+    width: 283px;
+}
+
+/*----- DROPDOWN -----*/
+.dropdown {
+    margin-top: 58px;
+    margin-right: 30px;
+    
+}
+
+.dropdown-menu {
+    max-height: 10px;
+    overflow-y: auto;
+}
+
+.btn-secondary {
+    color: #121212;
+    background-color: white;
+    border-color: rgba(218, 218, 218, 0.815);
+}
+
+.btn-secondary:hover {
+    color: #f1f1f1;
+    background-color: blueviolet;
+
+}
+
+.btn-secondary:focus {
+    color: #121212;
+    background-color: white;
+    box-shadow: 0px 0px 0px 4px rgba(119, 191, 250, 0.514);
+}

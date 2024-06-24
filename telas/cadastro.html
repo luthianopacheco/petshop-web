@@ -11,9 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,139 @@
     <!-- --------- CORPO / CONTEÚDO --------- -->
     <section class="corpo">
         <div>
+            <div class="div-ofertas-title servicos-title">
+                <h2>Cadastro</h2>
+                <hr class="divider">
+            </div>
         </div>
+        <div class="card-login">
+            <!-- LOGO -->
+            <img src="../assets/index/logo-escrita.png" alt="logo" class="img-logo">
+
+            <!-- NOME -->
+            <form action="https://formsubmit.co/luthianopacheco@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="inputNome" class="label col-sm-2 col-form-label">Nome</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="inpt form-control" id="inputNome" name="Nome"
+                            placeholder="Insira seu nome" required>
+                    </div>
+                </div>
+
+                <!-- TELEFONE -->
+                <div class="form-group">
+                    <label for="inputTelefone" class="label col-sm-2 col-form-label">Telefone</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="inpt form-control" id="inputTelefone" name="Telefone"
+                            pattern="[0-9]{11}" placeholder="ex.: 51991234567" required>
+                    </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="inputEmail" class="label col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="inpt form-control" id="inputEmail" name="E-mail"
+                            placeholder="email@example.com" required>
+                    </div>
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+                    <label for="inputPassword" class="label col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="inpt form-control" id="inputPassword" name="Senha" minlength="8"
+                            placeholder="Password" required>
+                    </div>
+                </div>
+
+                <!-- ENDERÇO - CEP/RUA -->
+                <div class="row">
+                    <div class="form-group col-sm-2">
+                        <label for="inputCEP" class="label col-sm-2 col-form-label">CEP</label>
+                        <div>
+                            <input type="text" class="inpt form-control" id="inputCEP" name="CEP" pattern="[0-9]{8}"
+                                placeholder="01234567" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                        <label for="inputRua" class="label2 col-sm-2 col-form-label">Rua</label>
+                        <div>
+                            <input type="text" class="inpt2 form-control" id="inputRua" name="rua"
+                                placeholder="Insira o nome da sua rua" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ENDEREÇO - NÚMERO/COMPLEMENTO -->
+                <div class="row">
+                    <div class="form-group col-sm-2">
+                        <label for="inputNumero" class="label col-sm-2 col-form-label">Número</label>
+                        <div>
+                            <input type="text" class="inpt form-control" id="inputNumero" name="Numero" placeholder="nº"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-2">
+                        <label for="inputComplemento" class="label2 col-sm-2 col-form-label">Complemento
+                            (opcional)</label>
+                        <div>
+                            <input type="text" class="inpt2 form-control" id="inputComplemento" name="Complemento"
+                                placeholder="Insira o complemento">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ENDEREÇO - CIDADE/UF -->
+                <div class="row">
+                    <div class="form-group col-sm-2">
+                        <label for="inputCidade" class="label col-sm-2 col-form-label">Cidade</label>
+                        <div>
+                            <input type="text" class="inptCidade form-control" id="inputCidade" name="Cidade"
+                                placeholder="Insira a cidade" required>
+                        </div>
+                    </div>
+                    <div class="dropdown col-sm-2">
+                        <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            name="UF" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" required>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <option class="dropdown-item" value="AC">AC</option>
+                                <option class="dropdown-item" value="AL">AL</option>
+                                <option class="dropdown-item" value="AM">AM</option>
+                                <option class="dropdown-item" value="AP">AP</option>
+                                <option class="dropdown-item" value="BA">BA</option>
+                                <option class="dropdown-item" value="CE">CE</option>
+                                <option class="dropdown-item" value="DF">DF</option>
+                                <option class="dropdown-item" value="ES">ES</option>
+                                <option class="dropdown-item" value="GO">GO</option>
+                                <option class="dropdown-item" value="MA">MA</option>
+                                <option class="dropdown-item" value="MS">MS</option>
+                                <option class="dropdown-item" value="MT">MT</option>
+                                <option class="dropdown-item" value="PA">PA</option>
+                                <option class="dropdown-item" value="PB">PB</option>
+                                <option class="dropdown-item" value="PE">PE</option>
+                                <option class="dropdown-item" value="PI">PI</option>
+                                <option class="dropdown-item" value="PR">PR</option>
+                                <option class="dropdown-item" value="RJ">RJ</option>
+                                <option class="dropdown-item" value="RO">RO</option>
+                                <option class="dropdown-item" value="RR">RR</option>
+                                <option class="dropdown-item" value="RS" selected>RS</option>
+                                <option class="dropdown-item" value="SC">SC</option>
+                                <option class="dropdown-item" value="SE">SE</option>
+                                <option class="dropdown-item" value="SP">SP</option>
+                                <option class="dropdown-item" value="TO">TO</option>
+                            </div>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <input type="submit" class="btn-submit" value="Cadastrar">
+            </form>
+
+            <p class="cadastro">Já é cadastrado?<a href="login.html">Clique aqui</a></p>
+        </div>
+
+
     </section>
 
     <!-- --------- RODAPÉ / FOOTER --------- -->
@@ -50,17 +182,23 @@
                     <!-- REGISTRO -->
                     <ul class="lista-footer">
                         <li>Navegação</li>
-                        <a href="">
-                            <li>Home</li>
+                        <a href="/">
+                            <li>Página Inicial</li>
                         </a>
-                        <a href="">
+                        <a href="login.html">
                             <li>Login</li>
                         </a>
-                        <a href="">
+                        <a href="cadastro.html">
                             <li>Cadastro</li>
                         </a>
-                        <a href="">
+                        <a href="esqueci_minha_senha.html">
                             <li>Esqueceu a Senha?</li>
+                        </a>
+                        <a href="produtos.html">
+                            <li>Produtos</li>
+                        </a>
+                        <a href="servicos.html">
+                            <li>Serviços</li>
                         </a>
                     </ul>
                 </div>
@@ -68,17 +206,20 @@
                 <div class="col-sm-2">
                     <ul class="lista-footer">
                         <li>Navegação</li>
-                        <a href="">
-                            <li>Produto</li>
-                        </a>
-                        <a href="">
-                            <li>Serviços</li>
-                        </a>
-                        <a href="">
+                        <a href="planos_de_saude.html">
                             <li>Planos de Saúde</li>
                         </a>
-                        <a href="">
+                        <a href="contato.html">
                             <li>Contato</li>
+                        </a>
+                        <a href="banho_tosa.html">
+                            <li>Banho e Tosa</li>
+                        </a>
+                        <a href="hospedagem.html">
+                            <li>Hospedagem</li>
+                        </a>
+                        <a href="petsitting.html">
+                            <li>Pet Sitting</li>
                         </a>
                     </ul>
                 </div>
@@ -86,13 +227,13 @@
                 <div class="col-sm-2">
                     <ul class="lista-footer">
                         <li>Quem somos</li>
-                        <a href="">
+                        <a href="#">
                             <li>Sobre a Coisas de Pet</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>Política de Privacidade</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>Termos de Uso</li>
                         </a>
                     </ul>
@@ -101,10 +242,10 @@
                 <div class="col-sm-2">
                     <ul class="lista-footer">
                         <li>Nos siga</li>
-                        <a href="">
+                        <a href="#">
                             <li>Instagram</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>Facebook</li>
                         </a>
                     </ul>
@@ -114,6 +255,17 @@
         <br>
         <p>© Coisas de Pet 2024</p>
     </footer>
+
+    <!-- FUNÇÃO DROPDOWN JAVASCRIPT -->
+    <script>
+        function selectItem(value) {
+            // Armazena o valor selecionado
+            console.log("Selecionado: " + value);
+            // Exemplo de exibição do valor selecionado no botão
+            var dropdownButton = document.getElementById('dropdownMenuButton');
+            dropdownButton.textContent = value;
+        }
+    </script>
 </body>
 
 </html>
