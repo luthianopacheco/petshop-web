@@ -4,7 +4,7 @@
 }
 
 @media (width >=1600px) {
-    .div-title {
+    .div-ofertas-title {
         max-width: 1250px;
     }
 }
@@ -21,7 +21,13 @@
 .card {
     min-width: 287px;
     width: 287px;
-    min-height: 450px;
+    min-height: 370px;
+}
+
+.planos-title{
+    max-width: 80%;
+    color: #121212;
+    align-self: center;
 }
 
 .btn{

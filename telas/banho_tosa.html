@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/banho_tosa.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 
@@ -27,7 +28,7 @@
             <a href="login.html" class="header-button"><i class="fa-solid fa-user"></i>Login </a>
         </nav>
         <nav class="navigator2">
-            <a href="produtos.html">Produtos</a>
+            <a href=" #">Produtos</a>
             <a href="servicos.html">Serviços</a>
             <a href="planos_de_saude.html">Planos de Saúde</a>
             <a href="contato.html">Contato</a>
@@ -38,7 +39,134 @@
     <!-- --------- CORPO / CONTEÚDO --------- -->
     <section class="corpo">
         <div>
+            <div class="div-title">
+                <h2>Banho e tosa</h2>
+                <hr class="divider">
+            </div>
         </div>
+        <div class="card">
+            <!-- LOGO -->
+            <img src="../assets/index/logo-escrita.png" alt="logo" class="img-logo">
+
+            <!-- TIPO DE SERVIÇO -->
+            <form action="https://formsubmit.co/luthianopacheco@gmail.com" method="POST">
+                <br>
+                <div class="dropdown">
+                    <label for="dropdownMenuButton" class="label col-sm-2">Tipo de banho: </label>
+                    <select class="btn btn-secondary dropdown-toggle col-sm-2" type="button" id="dropdownMenuButton"
+                        name="Tipo de banho" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        required>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <option class="dropdown-item" value="Suave">Banho suave</option>
+                            <option class="dropdown-item" value="Detox">Banho detox</option>
+                            <option class="dropdown-item" value="Nos">Banho para nós dificeis</option>
+                        </div>
+                    </select>
+                </div>
+                <br>
+                <div class="dropdown">
+                    <label for="dropdownMenuButton2" class="label col-sm-2">Tipo de tosa: </label>
+                    <select class="btn btn-secondary dropdown-toggle col-sm-2" type="button" id="dropdownMenuButton2"
+                        name="Tipo de tosa" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        required>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <option class="dropdown-item" value="Maquina">Tosa na maquina</option>
+                            <option class="dropdown-item" value="Tesoura">Tosa na tesoura</option>
+                            <option class="dropdown-item" value="Raca">Tosa da raça</option>
+                            <option class="dropdown-item" value="Higienica">Tosa higiênica</option>
+                            <option class="dropdown-item" value="Verao">Tosa verão</option>
+                        </div>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label class="label" for="agendamento">Quando? </label>
+                    <input type="date" class="datepicker" id="agendamento" name="Agendamento" required>
+                </div>
+                <br> <br>
+
+                <!-- INFORMAÇÕES DO PET -->
+
+                <h4>Informações do Pet</h4>
+                <hr class="divider">
+                <div class="form-group">
+                    <label for="pet-nome" class="label col-form-label">Nome do Pet</label>
+                    <div>
+                        <input type="text" class="inpt form-control" id="pet-nome" name="Nome (Pet)"
+                            placeholder="Insira o nome do seu pet" required>
+                    </div>
+                </div>
+                <br>
+
+                <div class="radio">
+                    <label for="cachorro" class="label col-sm-2">Tipo de pet: </label>
+                    <div>
+                        <input type="radio" id="cachorro" name="Tipo pet" value="Cachorro" checked>
+                        <label for="cachorro"> Cachorro</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gato" name="Tipo pet" value="Gato">
+                        <label for="gato">Gato</label>
+                    </div>
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <label for="pet-raca" class="label col-form-label">Raça</label>
+                    <div>
+                        <input type="text" class="inpt form-control" id="pet-raca" name="Raça"
+                            placeholder="Insira a raça do seu pet" required>
+                    </div>
+                </div>
+                <br>
+
+                <div class="dropdown">
+                    <label for="dropdownMenuButton3" class="label col-sm-2">Temperamento </label>
+                    <select class="btn btn-secondary dropdown-toggle col-sm-2" type="button" id="dropdownMenuButton3"
+                        name="Temperamento" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        required>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <option class="dropdown-item" value="Brincalhao">Brincalhão</option>
+                            <option class="dropdown-item" value="Docil">Dócil</option selected>
+                            <option class="dropdown-item" value="Medroso">Medroso</option>
+                            <option class="dropdown-item" value="Arisco">Arisco</option>
+
+                        </div>
+                    </select>
+                </div>
+
+                <br>
+                <hr> <br>
+
+                <div class="radio">
+                    <div>
+                        <input type="radio" id="semTele" name="tele" value="Sem tele-busca">
+                        <label for="semTele"> Sem Tele-Busca</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="comTele" name="Tele" value="Com tele-busca" checked>
+                        <label for="comTele">Com Tele-Busca</label>
+                    </div>
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <input type="text" class="inpt2 form-control" id="cep" name="CEP" placeholder="12345678">
+                </div>
+                <br>
+                <button class="btn-submit">Calcular</button>
+
+                <p class="resultado">R$149,99</p>
+
+
+                <br>
+                <input type="submit" class="btn-submit" value="Contratar">
+            </form>
+
+
+        </div>
+
+
     </section>
 
     <!-- --------- RODAPÉ / FOOTER --------- -->
@@ -62,7 +190,7 @@
                         <a href="esqueci_minha_senha.html">
                             <li>Esqueceu a Senha?</li>
                         </a>
-                        <a href="produtos.html">
+                        <a href=" #">
                             <li>Produtos</li>
                         </a>
                         <a href="servicos.html">
@@ -83,10 +211,10 @@
                         <a href="banho_tosa.html">
                             <li>Banho e Tosa</li>
                         </a>
-                        <a href="hospedagem.html">
+                        <a href=" #">
                             <li>Hospedagem</li>
                         </a>
-                        <a href="petsitting.html">
+                        <a href=" #">
                             <li>Pet Sitting</li>
                         </a>
                     </ul>

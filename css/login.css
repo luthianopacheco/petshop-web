@@ -1,12 +1,12 @@
 /*----------------- TITULO -----------------*/
-.div-ofertas-title {
+.div-title {
     max-width: 80%;
     color: #121212;
     margin: auto;
 }
 
 @media (width >=1600px) {
-    .div-ofertas-title {
+    .div-title {
         max-width: 1250px;
     }
 }
